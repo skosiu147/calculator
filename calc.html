@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="calc.css">
+    </head>
+    <body>
+        <div id="app">
+            <!--div z wynikiem działania-->
+            <div class="score">{{number1}} {{operator}} {{number2}} = {{score}}</div>
+
+            <!--tabela z cyframi-->
+            <div class="table">
+                <div class="row">
+                    <button class="cell" v-on:Click="updateScore(7)">7</button>
+                    <button class="cell" v-on:Click="updateScore(8)">8</button>
+                    <button class="cell" v-on:Click="updateScore(9)">9</button>
+                </div> <!--row-->
+                <div class="row">
+                    <button class="cell" v-on:Click="updateScore(4)">4</button>
+                    <button class="cell" v-on:Click="updateScore(5)">5</button>
+                    <button class="cell" v-on:Click="updateScore(6)">6</button>
+                </div>
+                <div class="row">
+                    <button class="cell" v-on:Click="updateScore(1)">1</button>
+                    <button class="cell" v-on:Click="updateScore(2)">2</button>
+                    <button class="cell" v-on:Click="updateScore(3)">3</button>
+                </div> <!--row-->            
+                <div class="row">
+                    <button class="cell" v-on:Click="makeFloat()">.</button>
+                    <button class="cell" v-on:Click="updateScore(0)">0</button>
+                    <button class="cell" v-on:Click="clearScore()">C</button>
+                </div> <!--row-->
+            </div> <!--table-->
+            <!--tabela ze znakami działania-->
+            <div class="table">
+                    <div class="row">
+                        <button class="cell3" v-on:Click="calculateScore()">=</button>
+                    </div>
+                    <div class="row">
+                        <button class="cell2" v-on:Click="updateMath(0)">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="cell2" v-on:Click="updateMath(1)">*</button>
+                    </div>
+                    <div class="row">
+                        <button class="cell2" v-on:Click="updateMath(2)">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="cell2" v-on:Click="updateMath(3)">+</button>
+                    </div>
+            </div> <!--table-->
+        </div> <!--app-->
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="calc.js"></script>
+    </body>
+</html>

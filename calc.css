@@ -1,0 +1,74 @@
+/*score field layout */
+.score{
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    background-color: black;
+    border-style: ridge;
+}
+
+/*calculator layout */
+.table{
+    display: block;
+    float: left;
+}
+
+.row{
+    display: block;   
+}
+
+/*button numbers layout*/
+.cell{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    background-color: darkgray;
+    text-align: center;
+    vertical-align: middle;
+    border-style: ridge;
+    margin-top: 5px;
+}
+
+.cell:hover{
+    background-color: gray;
+}
+
+/*button operators layout*/
+.cell2{
+    display: inline-block;
+    width: 80px;
+    height: 39px;
+    font-size: 25px;
+    background-color: darkgray;
+    text-align: center;
+    vertical-align: middle;
+    border-style: ridge;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.cell2:hover{
+    background-color: gray;
+}
+
+/*button calculate score layout*/
+.cell3{
+    display: inline-block;
+    width: 80px;
+    height: 39px;
+    font-size: 25px;
+    background-color: lightgreen;
+    text-align: center;
+    vertical-align: middle;
+    border-style: ridge;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.cell3:hover{
+    background-color: forestgreen;
+}
